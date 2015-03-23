@@ -8,6 +8,8 @@
 
 #import "___FILEBASENAME___.h"
 
+#import <LHSCategoryCollection/UIView+LHSAdditions.h>
+
 @implementation ___FILEBASENAMEASIDENTIFIER___
 
 - (instancetype)init {
