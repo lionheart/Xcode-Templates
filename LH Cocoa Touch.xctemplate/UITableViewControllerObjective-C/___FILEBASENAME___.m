@@ -8,7 +8,20 @@
 
 #import "___FILEBASENAME___.h"
 
+#import <LHSCategoryCollection/UIView+LHSAdditions.h>
+#import <LHSTableViewCells/LHSTableViewCellSubtitle.h>
+#import <LHSTableViewCells/LHSTableViewCellDefault.h>
+#import <LHSTableViewCells/LHSTableViewCellValue1.h>
+#import <LHSKeyboardAdjusting/UIViewController+LHSKeyboardAdjustment.h>
+
+static NSString * const CellIdentifier = @"CellIdentifier";
+
 @interface ___FILEBASENAMEASIDENTIFIER___ ()
+
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSLayoutConstraint *bottomConstraint;
+
+- (ExampleSectionType)sectionTypeForSection:(NSInteger)section;
 
 @end
 
@@ -17,84 +30,150 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.title = @"Title";
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
+    self.tableView.translatesAutoresizingMaskIntoConstraints = NO;
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.tableView registerClass:[LHSTableViewCellDefault class] forCellReuseIdentifier:CellIdentifier];
+#warning Uncomment for Auto Layout-based cell sizing. If you set up a AL view here, please set it up in viewDidLoad and don't forget to call updateConstraintsIfNeeded before adding it to the cell.
+//    self.tableView.estimatedRowHeight = 44;
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+
+    NSDictionary *views = @{@"top": self.topLayoutGuide,
+                            @"table": self.tableView};
+    
+    [self.view addSubview:self.tableView];
+    
+    self.bottomConstraint = [NSLayoutConstraint constraintWithItem:self.tableView
+                                                         attribute:NSLayoutAttributeBottom
+                                                         relatedBy:NSLayoutRelationEqual
+                                                            toItem:self.bottomLayoutGuide
+                                                         attribute:NSLayoutAttributeTop
+                                                        multiplier:1
+                                                          constant:0];
+    
+    [self.view addConstraint:self.bottomConstraint];
+    [self.view lhs_addConstraints:@"V:[top][table]" views:views];
+    [self.tableView lhs_fillWidthOfSuperview];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self lhs_activateKeyboardAdjustment];
 }
 
-#pragma mark - Table view data source
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self lhs_deactivateKeyboardAdjustment];
+}
+
+#pragma mark - LHSKeyboardAdjusting
+
+- (NSLayoutConstraint *)keyboardAdjustingBottomConstraint {
+    return self.bottomConstraint;
+}
+
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return ExampleSectionCount;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    ExampleSectionType sectionType = [self sectionTypeForSection:section];
+    switch (sectionType) {
+        case ExampleSection1:
+            return 1;
+            
+        case ExampleSection2:
+            return 1;
+    }
 }
 
-/*
+#warning Uncomment to specify cell heights explicitly (as opposed to using Auto Layout)
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+//    switch ((ExampleRowType)indexPath.row) {
+//        case ExampleRow1:
+//            return 44;
+//            
+//        case ExampleRow2:
+//            return 20;
+//            
+//        case ExampleRow3:
+//            return 60;
+//    }
+//}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    ExampleSectionType sectionType = [self sectionTypeForSection:indexPath.section];
+    switch (sectionType) {
+        case ExampleSection1:
+            break;
+            
+        case ExampleSection2:
+            break;
+    }
     
-    // Configure the cell...
-    
+    switch ((ExampleRowType)indexPath.row) {
+        case ExampleRow1:
+            break;
+
+        case ExampleRow2:
+            break;
+
+        case ExampleRow3:
+            break;
+    }
+
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    ExampleSectionType sectionType = [self sectionTypeForSection:section];
+    switch (sectionType) {
+        case ExampleSection1:
+            break;
+            
+        case ExampleSection2:
+            break;
+    }
+    
+    return nil;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+    ExampleSectionType sectionType = [self sectionTypeForSection:section];
+    switch (sectionType) {
+        case ExampleSection1:
+            break;
+            
+        case ExampleSection2:
+            break;
+    }
+    
+    return nil;
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+#pragma mark - UITextFieldDelegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
 }
-*/
 
-/*
-#pragma mark - Navigation
+#pragma mark - Other
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (ExampleSectionType)sectionTypeForSection:(NSInteger)section {
+    return section;
 }
-*/
 
 @end
