@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Ancestors</key>
+	<array>
+		<string>com.lionheartsw.dt.unit.cocoaTouchApplicationBase</string>
+	</array>
+	<key>Identifier</key>
+	<string>com.lionheartsw.dt.unit.coreDataCocoaTouchApplication</string>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Default</key>
+			<string>false</string>
+			<key>Description</key>
+			<string>Whether the application should use the Core Data framework for storage</string>
+			<key>Identifier</key>
+			<string>coreData</string>
+			<key>Name</key>
+			<string>Use Core Data</string>
+			<key>SortOrder</key>
+			<integer>1</integer>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<array>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</key>
+							<dict>
+								<key>Path</key>
+								<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
+							</dict>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>___PACKAGENAMEASIDENTIFIER___.xcdatamodeld</string>
+						</array>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>*:importCoreData</key>
+							<string>#import &lt;CoreData/CoreData.h&gt;
+</string>
+							<key>AppDelegate.h:interface:coreData</key>
+							<string>@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+- (void)saveContext;
+- (NSURL *)applicationDocumentsDirectory;
+</string>
+							<key>AppDelegate.m:implementation:coreData</key>
+							<string>#pragma mark - Core Data stack
+
+@synthesize managedObjectContext = _managedObjectContext;
+@synthesize managedObjectModel = _managedObjectModel;
+@synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
+
+- (NSURL *)applicationDocumentsDirectory {
+    // The directory the application uses to store the Core Data store file. This code uses a directory named &quot;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___PACKAGENAMEASIDENTIFIER___&quot; in the application&apos;s documents directory.
+    return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
+}
+
+- (NSManagedObjectModel *)managedObjectModel {
+    // The managed object model for the application. It is a fatal error for the application not to be able to find and load its model.
+    if (_managedObjectModel != nil) {
+        return _managedObjectModel;
+    }
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@&quot;___PACKAGENAMEASIDENTIFIER___&quot; withExtension:@&quot;momd&quot;];
+    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    return _managedObjectModel;
+}
+
+- (NSPersistentStoreCoordinator *)persistentStoreCoordinator {
+    // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it.
+    if (_persistentStoreCoordinator != nil) {
+        return _persistentStoreCoordinator;
+    }
+    
+    // Create the coordinator and store
+    
+    _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@&quot;___PACKAGENAMEASIDENTIFIER___.sqlite&quot;];
+    NSError *error = nil;
+    NSString *failureReason = @&quot;There was an error creating or loading the application&apos;s saved data.&quot;;
+    if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&amp;error]) {
+        // Report any error we got.
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        dict[NSLocalizedDescriptionKey] = @&quot;Failed to initialize the application&apos;s saved data&quot;;
+        dict[NSLocalizedFailureReasonErrorKey] = failureReason;
+        dict[NSUnderlyingErrorKey] = error;
+        error = [NSError errorWithDomain:@&quot;YOUR_ERROR_DOMAIN&quot; code:9999 userInfo:dict];
+        // Replace this with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        NSLog(@&quot;Unresolved error %@, %@&quot;, error, [error userInfo]);
+        abort();
+    }
+    
+    return _persistentStoreCoordinator;
+}
+
+
+- (NSManagedObjectContext *)managedObjectContext {
+    // Returns the managed object context for the application (which is already bound to the persistent store coordinator for the application.)
+    if (_managedObjectContext != nil) {
+        return _managedObjectContext;
+    }
+    
+    NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
+    if (!coordinator) {
+        return nil;
+    }
+    _managedObjectContext = [[NSManagedObjectContext alloc] init];
+    [_managedObjectContext setPersistentStoreCoordinator:coordinator];
+    return _managedObjectContext;
+}
+
+#pragma mark - Core Data Saving support
+
+- (void)saveContext {
+    NSManagedObjectContext *managedObjectContext = self.managedObjectContext;
+    if (managedObjectContext != nil) {
+        NSError *error = nil;
+        if ([managedObjectContext hasChanges] &amp;&amp; ![managedObjectContext save:&amp;error]) {
+            // Replace this implementation with code to handle the error appropriately.
+            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            NSLog(@&quot;Unresolved error %@, %@&quot;, error, [error userInfo]);
+            abort();
+        }
+    }
+}
+</string>
+							<key>AppDelegate.m:implementation:methods:applicationWillTerminate:save</key>
+							<string>// Saves changes in the application&apos;s managed object context before the application terminates.
+[self saveContext];
+</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>AppDelegate.h:imports:importFramework:CoreData</string>
+							<string>AppDelegate.h:interface:coreData</string>
+							<string>AppDelegate.m:implementation:methods:applicationWillTerminate:save</string>
+							<string>AppDelegate.m:implementation:coreData</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Objective-C</string>
+						</dict>
+					</dict>
+					<dict>
+						<key>Definitions</key>
+						<dict>
+							<key>AppDelegate.swift:implementation:coreData</key>
+							<string>// MARK: - Core Data stack
+
+lazy var applicationDocumentsDirectory: NSURL = {
+    // The directory the application uses to store the Core Data store file. This code uses a directory named &quot;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.___PACKAGENAMEASIDENTIFIER___&quot; in the application&apos;s documents Application Support directory.
+    let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
+    return urls[urls.count-1] as NSURL
+}()
+
+lazy var managedObjectModel: NSManagedObjectModel = {
+    // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
+    let modelURL = NSBundle.mainBundle().URLForResource(&quot;___PACKAGENAMEASIDENTIFIER___&quot;, withExtension: &quot;momd&quot;)!
+    return NSManagedObjectModel(contentsOfURL: modelURL)!
+}()
+
+lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator? = {
+    // The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.
+    // Create the coordinator and store
+    var coordinator: NSPersistentStoreCoordinator? = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
+    let url = self.applicationDocumentsDirectory.URLByAppendingPathComponent(&quot;___PACKAGENAMEASIDENTIFIER___.sqlite&quot;)
+    var error: NSError? = nil
+    var failureReason = &quot;There was an error creating or loading the application&apos;s saved data.&quot;
+    if coordinator!.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: url, options: nil, error: &amp;error) == nil {
+        coordinator = nil
+        // Report any error we got.
+        var dict = [String: AnyObject]()
+        dict[NSLocalizedDescriptionKey] = &quot;Failed to initialize the application&apos;s saved data&quot;
+        dict[NSLocalizedFailureReasonErrorKey] = failureReason
+        dict[NSUnderlyingErrorKey] = error
+        error = NSError(domain: &quot;YOUR_ERROR_DOMAIN&quot;, code: 9999, userInfo: dict)
+        // Replace this with code to handle the error appropriately.
+        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        NSLog(&quot;Unresolved error \(error), \(error!.userInfo)&quot;)
+        abort()
+    }
+    
+    return coordinator
+}()
+
+lazy var managedObjectContext: NSManagedObjectContext? = {
+    // Returns the managed object context for the application (which is already bound to the persistent store coordinator for the application.) This property is optional since there are legitimate error conditions that could cause the creation of the context to fail.
+    let coordinator = self.persistentStoreCoordinator
+    if coordinator == nil {
+        return nil
+    }
+    var managedObjectContext = NSManagedObjectContext()
+    managedObjectContext.persistentStoreCoordinator = coordinator
+    return managedObjectContext
+}()
+
+// MARK: - Core Data Saving support
+
+func saveContext () {
+    if let moc = self.managedObjectContext {
+        var error: NSError? = nil
+        if moc.hasChanges &amp;&amp; !moc.save(&amp;error) {
+            // Replace this implementation with code to handle the error appropriately.
+            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            NSLog(&quot;Unresolved error \(error), \(error!.userInfo)&quot;)
+            abort()
+        }
+    }
+}
+</string>
+							<key>AppDelegate.swift:implementation:methods:applicationWillTerminate:save</key>
+							<string>// Saves changes in the application&apos;s managed object context before the application terminates.
+self.saveContext()
+</string>
+						</dict>
+						<key>Nodes</key>
+						<array>
+							<string>AppDelegate.swift:imports:importFramework:CoreData</string>
+							<string>AppDelegate.swift:implementation:methods:applicationWillTerminate:save</string>
+							<string>AppDelegate.swift:implementation:coreData</string>
+						</array>
+						<key>RequiredOptions</key>
+						<dict>
+							<key>languageChoice</key>
+							<string>Swift</string>
+						</dict>
+					</dict>
+				</array>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

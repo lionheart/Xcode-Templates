@@ -35,6 +35,16 @@
 	</array>
 	<key>Nodes</key>
 	<array>
+		<string>Info-Beta.plist:CoreInfoPlist</string>
+		<string>Info-Beta.plist:Executable</string>
+		<string>Info-Beta.plist:BundleName</string>
+		<string>Info-Beta.plist:DevelopmentRegion</string>
+		<string>Info-Beta.plist:Versioning</string>
+		<string>Info-Debug.plist:CoreInfoPlist</string>
+		<string>Info-Debug.plist:Executable</string>
+		<string>Info-Debug.plist:BundleName</string>
+		<string>Info-Debug.plist:DevelopmentRegion</string>
+		<string>Info-Debug.plist:Versioning</string>
 		<string>Info-Release.plist:CoreInfoPlist</string>
 		<string>Info-Release.plist:Executable</string>
 		<string>Info-Release.plist:BundleName</string>
@@ -84,6 +94,98 @@
 &lt;string&gt;en&lt;/string&gt;
 </string>
 		<key>Info-Release.plist:Versioning</key>
+		<string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
+&lt;string&gt;1.0&lt;/string&gt;
+&lt;key&gt;CFBundleVersion&lt;/key&gt;
+&lt;string&gt;1&lt;/string&gt;
+</string>
+		<key>Info-Beta.plist</key>
+		<dict>
+			<key>Beginning</key>
+			<string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+</string>
+			<key>End</key>
+			<string>&lt;/dict&gt;
+&lt;/plist&gt;</string>
+			<key>Indent</key>
+			<integer>1</integer>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>TargetIndices</key>
+			<array/>
+			<key>SubstituteMacros</key>
+			<true/>
+		</dict>
+		<key>Info-Beta.plist:CoreInfoPlist</key>
+		<string>&lt;key&gt;CFBundleIdentifier&lt;/key&gt;
+&lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PRODUCT_NAME:rfc1034identifier)Beta&lt;/string&gt;
+&lt;key&gt;CFBundleInfoDictionaryVersion&lt;/key&gt;
+&lt;string&gt;6.0&lt;/string&gt;
+&lt;key&gt;CFBundleSignature&lt;/key&gt;
+&lt;string&gt;????&lt;/string&gt;
+</string>
+		<key>Info-Beta.plist:Executable</key>
+		<string>&lt;key&gt;CFBundleExecutable&lt;/key&gt;
+&lt;string&gt;$(EXECUTABLE_NAME)&lt;/string&gt;
+</string>
+		<key>Info-Beta.plist:BundleName</key>
+		<string>&lt;key&gt;CFBundleName&lt;/key&gt;
+&lt;string&gt;$(PRODUCT_NAME)&lt;/string&gt;
+</string>
+		<key>Info-Beta.plist:DevelopmentRegion</key>
+		<string>&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;
+&lt;string&gt;en&lt;/string&gt;
+</string>
+		<key>Info-Beta.plist:Versioning</key>
+		<string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
+&lt;string&gt;1.0&lt;/string&gt;
+&lt;key&gt;CFBundleVersion&lt;/key&gt;
+&lt;string&gt;1&lt;/string&gt;
+</string>
+		<key>Info-Debug.plist</key>
+		<dict>
+			<key>Beginning</key>
+			<string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
+&lt;plist version=&quot;1.0&quot;&gt;
+&lt;dict&gt;
+</string>
+			<key>End</key>
+			<string>&lt;/dict&gt;
+&lt;/plist&gt;</string>
+			<key>Indent</key>
+			<integer>1</integer>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>TargetIndices</key>
+			<array/>
+			<key>SubstituteMacros</key>
+			<true/>
+		</dict>
+		<key>Info-Debug.plist:CoreInfoPlist</key>
+		<string>&lt;key&gt;CFBundleIdentifier&lt;/key&gt;
+&lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PRODUCT_NAME:rfc1034identifier)Debug&lt;/string&gt;
+&lt;key&gt;CFBundleInfoDictionaryVersion&lt;/key&gt;
+&lt;string&gt;6.0&lt;/string&gt;
+&lt;key&gt;CFBundleSignature&lt;/key&gt;
+&lt;string&gt;????&lt;/string&gt;
+</string>
+		<key>Info-Debug.plist:Executable</key>
+		<string>&lt;key&gt;CFBundleExecutable&lt;/key&gt;
+&lt;string&gt;$(EXECUTABLE_NAME)&lt;/string&gt;
+</string>
+		<key>Info-Debug.plist:BundleName</key>
+		<string>&lt;key&gt;CFBundleName&lt;/key&gt;
+&lt;string&gt;$(PRODUCT_NAME)&lt;/string&gt;
+</string>
+		<key>Info-Debug.plist:DevelopmentRegion</key>
+		<string>&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;
+&lt;string&gt;en&lt;/string&gt;
+</string>
+		<key>Info-Debug.plist:Versioning</key>
 		<string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
 &lt;string&gt;1.0&lt;/string&gt;
 &lt;key&gt;CFBundleVersion&lt;/key&gt;

@@ -68,7 +68,15 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>Info.plist:PackageType</key>
+		<key>Info-Release.plist:PackageType</key>
+		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
+&lt;string&gt;APPL&lt;/string&gt;
+</string>
+		<key>Info-Beta.plist:PackageType - 2</key>
+		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
+&lt;string&gt;APPL&lt;/string&gt;
+</string>
+		<key>Info-Debug.plist:PackageType - 3</key>
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
 &lt;string&gt;APPL&lt;/string&gt;
 </string>

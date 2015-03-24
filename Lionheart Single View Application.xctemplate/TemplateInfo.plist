@@ -5,6 +5,7 @@
 	<key>Ancestors</key>
 	<array>
 		<string>com.lionheartsw.dt.unit.cocoaTouchApplicationBase</string>
+		<string>com.lionheartsw.dt.unit.coreDataCocoaTouchApplication</string>
 	</array>
 	<key>Concrete</key>
 	<true/>
@@ -16,6 +17,52 @@
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Options</key>
 	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>universalDeviceFamily</string>
+			<key>Units</key>
+			<dict>
+				<key>Universal</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_Universal.storyboard</string>
+							<key>SortOrder</key>
+							<integer>99</integer>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPad</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPad.storyboard</string>
+							<key>SortOrder</key>
+							<integer>99</integer>
+						</dict>
+					</dict>
+				</dict>
+				<key>iPhone</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>Base.lproj/Main.storyboard</key>
+						<dict>
+							<key>Path</key>
+							<string>Main_iPhone.storyboard</string>
+							<key>SortOrder</key>
+							<integer>99</integer>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
 		<dict>
 			<key>Identifier</key>
 			<string>languageChoice</string>
