@@ -11,7 +11,7 @@ project_templates:
 	sudo ln -s `pwd`/"Lionheart Application.xctemplate" "$(PROJECT_INSTALL_PATH)"
 	sudo ln -s `pwd`/"Lionheart Cocoa Touch Application Base.xctemplate" "$(PROJECT_INSTALL_PATH)"
 	sudo ln -s `pwd`/"Lionheart iOS Base.xctemplate" "$(PROJECT_INSTALL_PATH)"
-	sudo ln -s `pwd`/"Lionheart Single View Application.xctemplate" "$(PROJECT_INSTALL_PATH)"
+	sudo ln -s `pwd`/"Lionheart iOS Application.xctemplate" "$(PROJECT_INSTALL_PATH)"
 	sudo ln -s `pwd`/"Lionheart Core Data Cocoa Touch Application.xctemplate" "$(PROJECT_INSTALL_PATH)"
 
 file_templates:
@@ -25,5 +25,5 @@ clean:
 	sudo rm -rf "$(PROJECT_INSTALL_PATH)/Lionheart Application.xctemplate"
 	sudo rm -rf "$(PROJECT_INSTALL_PATH)/Lionheart Cocoa Touch Application Base.xctemplate"
 	sudo rm -rf "$(PROJECT_INSTALL_PATH)/Lionheart iOS Base.xctemplate"
-	sudo rm -rf "$(PROJECT_INSTALL_PATH)/Lionheart Single View Application.xctemplate"
+	sudo rm -rf "$(PROJECT_INSTALL_PATH)/Lionheart iOS Application.xctemplate"
 	sudo rm -rf "$(PROJECT_INSTALL_PATH)/Lionheart Core Data Cocoa Touch Application.xctemplate"
