@@ -19,6 +19,13 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
+    <key>Test.json</key>
+    <dict>
+      <key>Path</key>
+      <string>Test.json</string>
+      <key>SortOrder</key>
+      <integer>100</integer>
+    </dict>
 		<key>Info-Debug.plist:UIRequiredDeviceCapabilities</key>
 		<dict>
 			<key>Beginning</key>
@@ -117,6 +124,7 @@
 		<string>Info-Release.plist:UIRequiredDeviceCapabilities:base</string>
 		<string>Info-Release.plist:LaunchScreen</string>
 		<string>Images.xcassets</string>
+		<string>Test.json</string>
 	</array>
 	<key>Options</key>
 	<array>
