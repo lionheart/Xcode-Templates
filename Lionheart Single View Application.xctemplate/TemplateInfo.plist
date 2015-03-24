@@ -4,13 +4,12 @@
 <dict>
 	<key>Ancestors</key>
 	<array>
-		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
 		<string>com.lionheartsw.dt.unit.cocoaTouchApplicationBase</string>
 	</array>
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>This template provides a starting point for an application that uses a single view. It provides a view controller to manage the view, and a storyboard or nib file that contains the view.</string>
+	<string>This template provides a starting point for an application that uses a single view. It provides a view controller to manage the view.</string>
 	<key>Identifier</key>
 	<string>com.lionheartsw.dt.unit.singleViewApplication</string>
 	<key>Kind</key>
