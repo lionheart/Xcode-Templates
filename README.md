@@ -26,4 +26,4 @@ You'll need to enter your password for the same reason as mentioned above.
 Usage
 -----
 
-For now, only file templates are included. To use them, open up the new file dialog in Xcode, then select "LH Cocoa Touch Class". It's like a Coca Touch Class, but better. Then, create your file as usual.
+For now, only file templates are included. To use them, open up the new file dialog in Xcode, then select "LH Cocoa Touch Class". It's like a Cocoa Touch Class, but better. Then, create your file as usual.
