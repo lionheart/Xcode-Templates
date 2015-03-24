@@ -64,7 +64,9 @@
 	</array>
 	<key>Nodes</key>
 	<array>
-		<string>Info.plist:PackageType</string>
+		<string>Info-Release.plist:PackageType</string>
+		<string>Info-Beta.plist:PackageType</string>
+		<string>Info-Debug.plist:PackageType</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -72,11 +74,11 @@
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
 &lt;string&gt;APPL&lt;/string&gt;
 </string>
-		<key>Info-Beta.plist:PackageType - 2</key>
+		<key>Info-Beta.plist:PackageType</key>
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
 &lt;string&gt;APPL&lt;/string&gt;
 </string>
-		<key>Info-Debug.plist:PackageType - 3</key>
+		<key>Info-Debug.plist:PackageType</key>
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
 &lt;string&gt;APPL&lt;/string&gt;
 </string>

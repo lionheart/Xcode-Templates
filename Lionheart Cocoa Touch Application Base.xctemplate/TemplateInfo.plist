@@ -149,8 +149,12 @@
 					</dict>
 					<key>Nodes</key>
 					<array>
-						<string>Info.plist:UISupportedInterfaceOrientations~iPhone</string>
-						<string>Info.plist:UISupportedInterfaceOrientations~iPad</string>
+						<string>Info-Release.plist:UISupportedInterfaceOrientations~iPhone</string>
+						<string>Info-Release.plist:UISupportedInterfaceOrientations~iPad</string>
+						<string>Info-Beta.plist:UISupportedInterfaceOrientations~iPhone</string>
+						<string>Info-Beta.plist:UISupportedInterfaceOrientations~iPad</string>
+						<string>Info-Debug.plist:UISupportedInterfaceOrientations~iPhone</string>
+						<string>Info-Debug.plist:UISupportedInterfaceOrientations~iPad</string>
 					</array>
 					<key>Project</key>
 					<dict>
@@ -175,7 +179,9 @@
 					</dict>
 					<key>Nodes</key>
 					<array>
-						<string>Info.plist:UISupportedInterfaceOrientations~iPad</string>
+						<string>Info-Release.plist:UISupportedInterfaceOrientations~iPad</string>
+						<string>Info-Beta.plist:UISupportedInterfaceOrientations~iPad</string>
+						<string>Info-Debug.plist:UISupportedInterfaceOrientations~iPad</string>
 					</array>
 					<key>Project</key>
 					<dict>
@@ -200,7 +206,9 @@
 					</dict>
 					<key>Nodes</key>
 					<array>
-						<string>Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+						<string>Info-Release.plist:UISupportedInterfaceOrientations~iPhone</string>
+						<string>Info-Beta.plist:UISupportedInterfaceOrientations~iPhone</string>
+						<string>Info-Debug.plist:UISupportedInterfaceOrientations~iPhone</string>
 					</array>
 				</dict>
 			</dict>
