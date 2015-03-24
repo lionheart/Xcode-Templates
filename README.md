@@ -10,7 +10,7 @@ Installation
 make
 ```
 
-You'll need to enter your password. This is because Xcode templates are stored in `/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/`, which is a write-protected folder.
+You'll need to enter your password. This is because Xcode templates are stored in `/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/`, which is a write-protected folder. This command creates a symlink to the folder in which you downloaded the templates to (so you don't need to muck around in Xcode-land).
 
 Removal
 -------
