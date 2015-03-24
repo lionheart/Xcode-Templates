@@ -27,3 +27,8 @@ Usage
 -----
 
 For now, only file templates are included. To use them, open up the new file dialog in Xcode, then select "LH Cocoa Touch Class". It's like a Cocoa Touch Class, but better. Then, create your file as usual.
+
+Reference
+---------
+
+Xcode templates are stored in `/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates` and `/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/`.
