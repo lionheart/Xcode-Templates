@@ -19,6 +19,15 @@
 	</array>
 	<key>Definitions</key>
 	<dict>
+    <key>___PACKAGENAMEASIDENTIFIER___-Prefix.pch</key>
+    <dict>
+      <key>Path</key>
+      <string>___PACKAGENAMEASIDENTIFIER___-Prefix.pch</string>
+      <key>SortOrder</key>
+      <integer>100</integer>
+      <key>Group</key>
+      <string>Supporting Files</string>
+    </dict>
 		<key>Info-Debug.plist:UIRequiredDeviceCapabilities</key>
 		<dict>
 			<key>Beginning</key>
@@ -117,6 +126,7 @@
 		<string>Info-Release.plist:UIRequiredDeviceCapabilities:base</string>
 		<string>Info-Release.plist:LaunchScreen</string>
 		<string>Images.xcassets</string>
+		<string>___PACKAGENAMEASIDENTIFIER___-Prefix.pch</string>
 	</array>
 	<key>Options</key>
 	<array>
