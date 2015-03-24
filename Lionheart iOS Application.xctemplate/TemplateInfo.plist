@@ -10,9 +10,9 @@
 	<key>Concrete</key>
 	<true/>
 	<key>Description</key>
-	<string>This template provides a starting point for an application that uses a single view. It provides a view controller to manage the view.</string>
+	<string>This template provides the standard Lionheart Software iOS application template.</string>
 	<key>Identifier</key>
-	<string>com.lionheartsw.dt.unit.singleViewApplication</string>
+	<string>com.lionheartsw.dt.unit.application</string>
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Options</key>
