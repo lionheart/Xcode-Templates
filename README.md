@@ -31,4 +31,7 @@ For now, only file templates are included. To use them, open up the new file dia
 Reference
 ---------
 
-Xcode templates are stored in `/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/` and `/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/`.
+Xcode templates are stored in:
+
+* `/Applications/Xcode.app/Contents/Developer/Library/Xcode/Templates/`
+* `/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/`
