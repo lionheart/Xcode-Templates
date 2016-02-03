@@ -36,3 +36,6 @@
 #define TESTING 1
 #endif
 
+// Pass 0xcccccc and get color #cccccc
+UIColor *RGB(uint32_t x);
+UIColor *RGBA(uint32_t x, CGFloat alpha);
