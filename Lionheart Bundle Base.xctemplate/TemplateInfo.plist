@@ -6,6 +6,16 @@
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Identifier</key>
 	<string>com.lionheartsw.dt.unit.bundleBase</string>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>SharedSettings</key>
+			<dict>
+				<key>INFOPLIST_FILE</key>
+				<string>___PACKAGENAME___/Info.plist</string>
+			</dict>
+		</dict>
+	</array>
 	<key>Ancestors</key>
 	<array>
 		<string>com.lionheartsw.dt.unit.base</string>
