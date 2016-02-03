@@ -8,27 +8,16 @@
 		<string>com.lionheartsw.dt.unit.iosBase</string>
 		<string>com.apple.dt.unit.languageChoice</string>
 	</array>
-	<key>Components</key>
-	<array>
-		<dict>
-			<key>Identifier</key>
-			<string>com.apple.dt.unit.cocoaTouchApplicationUnitTestBundle</string>
-			<key>Name</key>
-			<string>___PACKAGENAME___Tests</string>
-		</dict>
-	</array>
 	<key>Definitions</key>
 	<dict>
-    <key>___PACKAGENAMEASIDENTIFIER___-Prefix.pch</key>
-    <dict>
-      <key>Path</key>
-      <string>___PACKAGENAMEASIDENTIFIER___-Prefix.pch</string>
-      <key>SortOrder</key>
-      <integer>100</integer>
-      <key>Group</key>
-      <string>Supporting Files</string>
-    </dict>
-		<key>Info-Debug.plist:UIRequiredDeviceCapabilities</key>
+		<key>Images.xcassets</key>
+		<dict>
+			<key>Path</key>
+			<string>Images-Universal.xcassets</string>
+			<key>SortOrder</key>
+			<integer>100</integer>
+		</dict>
+		<key>Info.plist:UIRequiredDeviceCapabilities</key>
 		<dict>
 			<key>Beginning</key>
 			<string>&lt;key&gt;UIRequiredDeviceCapabilities&lt;/key&gt;
@@ -38,12 +27,12 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>Info-Development.plist:UIRequiredDeviceCapabilities:base</key>
+		<key>Info.plist:UIRequiredDeviceCapabilities:base</key>
 		<string>&lt;string&gt;armv7&lt;/string&gt;</string>
-		<key>Info-Development.plist:iPhone</key>
+		<key>Info.plist:iPhone</key>
 		<string>&lt;key&gt;LSRequiresIPhoneOS&lt;/key&gt;
 &lt;true/&gt;</string>
-		<key>Info-Development.plist:statusBarTintForNavBar</key>
+		<key>Info.plist:statusBarTintForNavBar</key>
 		<string>&lt;key&gt;UIStatusBarTintParameters&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;UINavigationBar&lt;/key&gt;
@@ -55,60 +44,8 @@
     &lt;/dict&gt;
 &lt;/dict&gt;
 </string>
-		<key>Info-Beta.plist:UIRequiredDeviceCapabilities</key>
-		<dict>
-			<key>Beginning</key>
-			<string>&lt;key&gt;UIRequiredDeviceCapabilities&lt;/key&gt;
-&lt;array&gt;</string>
-			<key>End</key>
-			<string>&lt;/array&gt;</string>
-			<key>Indent</key>
-			<integer>1</integer>
-		</dict>
-		<key>Info-Beta.plist:UIRequiredDeviceCapabilities:base</key>
-		<string>&lt;string&gt;armv7&lt;/string&gt;</string>
-		<key>Info-Beta.plist:iPhone</key>
-		<string>&lt;key&gt;LSRequiresIPhoneOS&lt;/key&gt;
-&lt;true/&gt;</string>
-		<key>Info-Beta.plist:statusBarTintForNavBar</key>
-		<string>&lt;key&gt;UIStatusBarTintParameters&lt;/key&gt;
-&lt;dict&gt;
-    &lt;key&gt;UINavigationBar&lt;/key&gt;
-    &lt;dict&gt;
-        &lt;key&gt;Style&lt;/key&gt;
-        &lt;string&gt;UIBarStyleDefault&lt;/string&gt;
-        &lt;key&gt;Translucent&lt;/key&gt;
-        &lt;false/&gt;
-    &lt;/dict&gt;
-&lt;/dict&gt;
-</string>
-		<key>Info-Release.plist:UIRequiredDeviceCapabilities</key>
-		<dict>
-			<key>Beginning</key>
-			<string>&lt;key&gt;UIRequiredDeviceCapabilities&lt;/key&gt;
-&lt;array&gt;</string>
-			<key>End</key>
-			<string>&lt;/array&gt;</string>
-			<key>Indent</key>
-			<integer>1</integer>
-		</dict>
-		<key>Info-Release.plist:UIRequiredDeviceCapabilities:base</key>
-		<string>&lt;string&gt;armv7&lt;/string&gt;</string>
-		<key>Info-Release.plist:iPhone</key>
-		<string>&lt;key&gt;LSRequiresIPhoneOS&lt;/key&gt;
-&lt;true/&gt;</string>
-		<key>Info-Release.plist:statusBarTintForNavBar</key>
-		<string>&lt;key&gt;UIStatusBarTintParameters&lt;/key&gt;
-&lt;dict&gt;
-    &lt;key&gt;UINavigationBar&lt;/key&gt;
-    &lt;dict&gt;
-        &lt;key&gt;Style&lt;/key&gt;
-        &lt;string&gt;UIBarStyleDefault&lt;/string&gt;
-        &lt;key&gt;Translucent&lt;/key&gt;
-        &lt;false/&gt;
-    &lt;/dict&gt;
-&lt;/dict&gt;
-</string>
+		<key>Info.plist:</key>
+		<string></string>
 	</dict>
 	<key>Identifier</key>
 	<string>com.lionheartsw.dt.unit.cocoaTouchApplicationBase</string>
@@ -116,117 +53,15 @@
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Nodes</key>
 	<array>
-		<string>Info-Beta.plist:iPhone</string>
-		<string>Info-Beta.plist:UIRequiredDeviceCapabilities:base</string>
-		<string>Info-Beta.plist:LaunchScreen</string>
-		<string>Info-Beta.plist:UISupportedInterfaceOrientations~iPhone</string>
-		<string>Info-Beta.plist:UISupportedInterfaceOrientations~iPad</string>
-		<string>Info-Development.plist:iPhone</string>
-		<string>Info-Development.plist:UIRequiredDeviceCapabilities:base</string>
-		<string>Info-Development.plist:LaunchScreen</string>
-		<string>Info-Development.plist:UISupportedInterfaceOrientations~iPhone</string>
-		<string>Info-Development.plist:UISupportedInterfaceOrientations~iPad</string>
-		<string>Info-Release.plist:iPhone</string>
-		<string>Info-Release.plist:UIRequiredDeviceCapabilities:base</string>
-		<string>Info-Release.plist:LaunchScreen</string>
+		<string>Info.plist:iPhone</string>
+		<string>Info.plist:UIRequiredDeviceCapabilities:base</string>
+		<string>Info.plist:LaunchScreen</string>
+		<string>Info.plist:UISupportedInterfaceOrientations~iPhone</string>
+		<string>Info.plist:UISupportedInterfaceOrientations~iPad</string>
 		<string>Images.xcassets</string>
-		<string>___PACKAGENAMEASIDENTIFIER___-Prefix.pch</string>
 	</array>
 	<key>Options</key>
 	<array>
-		<dict>
-			<key>Default</key>
-			<string>Universal</string>
-			<key>Description</key>
-			<string>Which device family to create a project for</string>
-			<key>Identifier</key>
-			<string>universalDeviceFamily</string>
-			<key>Name</key>
-			<string>Devices:</string>
-			<key>SortOrder</key>
-			<integer>1</integer>
-			<key>Type</key>
-			<string>popup</string>
-			<key>Units</key>
-			<dict>
-				<key>Universal</key>
-				<dict>
-					<key>Definitions</key>
-					<dict>
-						<key>Images.xcassets</key>
-						<dict>
-							<key>Path</key>
-							<string>Images-Universal.xcassets</string>
-							<key>SortOrder</key>
-							<integer>100</integer>
-						</dict>
-					</dict>
-					<key>Nodes</key>
-					<array>
-						<string>Info-Release.plist:UISupportedInterfaceOrientations~iPhone</string>
-						<string>Info-Release.plist:UISupportedInterfaceOrientations~iPad</string>
-						<string>Info-Beta.plist:UISupportedInterfaceOrientations~iPhone</string>
-						<string>Info-Beta.plist:UISupportedInterfaceOrientations~iPad</string>
-						<string>Info-Debug.plist:UISupportedInterfaceOrientations~iPhone</string>
-						<string>Info-Debug.plist:UISupportedInterfaceOrientations~iPad</string>
-					</array>
-					<key>Project</key>
-					<dict>
-						<key>SharedSettings</key>
-						<dict>
-							<key>TARGETED_DEVICE_FAMILY</key>
-							<string>1,2</string>
-						</dict>
-					</dict>
-				</dict>
-				<key>iPad</key>
-				<dict>
-					<key>Definitions</key>
-					<dict>
-						<key>Images.xcassets</key>
-						<dict>
-							<key>Path</key>
-							<string>Images-iPad.xcassets</string>
-							<key>SortOrder</key>
-							<integer>100</integer>
-						</dict>
-					</dict>
-					<key>Nodes</key>
-					<array>
-						<string>Info-Release.plist:UISupportedInterfaceOrientations~iPad</string>
-						<string>Info-Beta.plist:UISupportedInterfaceOrientations~iPad</string>
-						<string>Info-Debug.plist:UISupportedInterfaceOrientations~iPad</string>
-					</array>
-					<key>Project</key>
-					<dict>
-						<key>SharedSettings</key>
-						<dict>
-							<key>TARGETED_DEVICE_FAMILY</key>
-							<string>2</string>
-						</dict>
-					</dict>
-				</dict>
-				<key>iPhone</key>
-				<dict>
-					<key>Definitions</key>
-					<dict>
-						<key>Images.xcassets</key>
-						<dict>
-							<key>Path</key>
-							<string>Images-iPhone.xcassets</string>
-							<key>SortOrder</key>
-							<integer>100</integer>
-						</dict>
-					</dict>
-					<key>Nodes</key>
-					<array>
-						<string>Info-Release.plist:UISupportedInterfaceOrientations~iPhone</string>
-						<string>Info-Beta.plist:UISupportedInterfaceOrientations~iPhone</string>
-						<string>Info-Debug.plist:UISupportedInterfaceOrientations~iPhone</string>
-					</array>
-				</dict>
-			</dict>
-		</dict>
 		<dict>
 			<key>Identifier</key>
 			<string>languageChoice</string>
@@ -329,16 +164,6 @@
 						<string>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions(func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?\) -&gt; Bool)</string>
 						<string>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</string>
 						<string>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:return</string>
-						<string>AppDelegate.swift:implementation:methods:applicationWillResignActive(func applicationWillResignActive(application: UIApplication\))</string>
-						<string>AppDelegate.swift:implementation:methods:applicationWillResignActive:comments</string>
-						<string>AppDelegate.swift:implementation:methods:applicationDidEnterBackground(func applicationDidEnterBackground(application: UIApplication\))</string>
-						<string>AppDelegate.swift:implementation:methods:applicationDidEnterBackground:comments</string>
-						<string>AppDelegate.swift:implementation:methods:applicationWillEnterForeground(func applicationWillEnterForeground(application: UIApplication\))</string>
-						<string>AppDelegate.swift:implementation:methods:applicationWillEnterForeground:comments</string>
-						<string>AppDelegate.swift:implementation:methods:applicationDidBecomeActive(func applicationDidBecomeActive(application: UIApplication\))</string>
-						<string>AppDelegate.swift:implementation:methods:applicationDidBecomeActive:comments</string>
-						<string>AppDelegate.swift:implementation:methods:applicationWillTerminate(func applicationWillTerminate(application: UIApplication\))</string>
-						<string>AppDelegate.swift:implementation:methods:applicationWillTerminate:comments</string>
 					</array>
 				</dict>
 			</dict>
@@ -352,16 +177,22 @@
 			<dict>
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>iPhone Distribution</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER_SUFFIX</key>
+				<string></string>
 			</dict>
 			<key>Beta</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>iPhone Distribution</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER_SUFFIX</key>
+				<string>Beta</string>
 			</dict>
 			<key>Development</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>iPhone Developer</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER_SUFFIX</key>
+				<string>Development</string>
 			</dict>
 		</dict>
 	</dict>
@@ -370,6 +201,8 @@
 		<dict>
 			<key>SharedSettings</key>
 			<dict>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
 				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
 				<string>AppIcon</string>
 				<key>LD_RUNPATH_SEARCH_PATHS</key>

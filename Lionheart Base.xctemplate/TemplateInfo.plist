@@ -156,15 +156,8 @@
 			<dict>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>Configurations</key>
-			<dict>
-				<key>Development</key>
-				<dict/>
-				<key>Release</key>
-				<dict/>
-				<key>Beta</key>
-				<dict/>
+				<key>INFOPLIST_FILE</key>
+				<string>___PACKAGENAME___/Info.plist</string>
 			</dict>
 		</dict>
 	</array>

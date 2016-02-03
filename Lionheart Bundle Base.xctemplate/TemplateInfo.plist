@@ -10,50 +10,17 @@
 	<array>
 		<string>com.lionheartsw.dt.unit.base</string>
 	</array>
-	<key>Targets</key>
-	<array>
-		<dict>
-			<key>Configurations</key>
-			<dict>
-				<key>Development</key>
-				<dict>
-					<key>INFOPLIST_FILE</key>
-					<string>___PACKAGENAME___/Info-Development.plist</string>
-				</dict>
-				<key>Beta</key>
-				<dict>
-					<key>INFOPLIST_FILE</key>
-					<string>___PACKAGENAME___/Info-Beta.plist</string>
-				</dict>
-				<key>Release</key>
-				<dict>
-					<key>INFOPLIST_FILE</key>
-					<string>___PACKAGENAME___/Info-Release.plist</string>
-				</dict>
-			</dict>
-		</dict>
-	</array>
 	<key>Nodes</key>
 	<array>
-		<string>Info-Beta.plist:CoreInfoPlist</string>
-		<string>Info-Beta.plist:Executable</string>
-		<string>Info-Beta.plist:BundleName</string>
-		<string>Info-Beta.plist:DevelopmentRegion</string>
-		<string>Info-Beta.plist:Versioning</string>
-		<string>Info-Development.plist:CoreInfoPlist</string>
-		<string>Info-Development.plist:Executable</string>
-		<string>Info-Development.plist:BundleName</string>
-		<string>Info-Development.plist:DevelopmentRegion</string>
-		<string>Info-Development.plist:Versioning</string>
-		<string>Info-Release.plist:CoreInfoPlist</string>
-		<string>Info-Release.plist:Executable</string>
-		<string>Info-Release.plist:BundleName</string>
-		<string>Info-Release.plist:DevelopmentRegion</string>
-		<string>Info-Release.plist:Versioning</string>
+		<string>Info.plist:CoreInfoPlist</string>
+		<string>Info.plist:Executable</string>
+		<string>Info.plist:BundleName</string>
+		<string>Info.plist:DevelopmentRegion</string>
+		<string>Info.plist:Versioning</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>Info-Release.plist</key>
+		<key>Info.plist</key>
 		<dict>
 			<key>Beginning</key>
 			<string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
@@ -73,119 +40,27 @@
 			<key>SubstituteMacros</key>
 			<true/>
 		</dict>
-		<key>Info-Release.plist:CoreInfoPlist</key>
+		<key>Info.plist:CoreInfoPlist</key>
 		<string>&lt;key&gt;CFBundleIdentifier&lt;/key&gt;
-&lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PRODUCT_NAME:rfc1034identifier)&lt;/string&gt;
+&lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PRODUCT_NAME:rfc1034identifier)$(PRODUCT_BUNDLE_IDENTIFIER_SUFFIX)&lt;/string&gt;
 &lt;key&gt;CFBundleInfoDictionaryVersion&lt;/key&gt;
 &lt;string&gt;6.0&lt;/string&gt;
 &lt;key&gt;CFBundleSignature&lt;/key&gt;
 &lt;string&gt;????&lt;/string&gt;
 </string>
-		<key>Info-Release.plist:Executable</key>
+		<key>Info.plist:Executable</key>
 		<string>&lt;key&gt;CFBundleExecutable&lt;/key&gt;
 &lt;string&gt;$(EXECUTABLE_NAME)&lt;/string&gt;
 </string>
-		<key>Info-Release.plist:BundleName</key>
+		<key>Info.plist:BundleName</key>
 		<string>&lt;key&gt;CFBundleName&lt;/key&gt;
 &lt;string&gt;$(PRODUCT_NAME)&lt;/string&gt;
 </string>
-		<key>Info-Release.plist:DevelopmentRegion</key>
+		<key>Info.plist:DevelopmentRegion</key>
 		<string>&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;
 &lt;string&gt;en&lt;/string&gt;
 </string>
-		<key>Info-Release.plist:Versioning</key>
-		<string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
-&lt;string&gt;1.0&lt;/string&gt;
-&lt;key&gt;CFBundleVersion&lt;/key&gt;
-&lt;string&gt;1&lt;/string&gt;
-</string>
-		<key>Info-Beta.plist</key>
-		<dict>
-			<key>Beginning</key>
-			<string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
-&lt;plist version=&quot;1.0&quot;&gt;
-&lt;dict&gt;
-</string>
-			<key>End</key>
-			<string>&lt;/dict&gt;
-&lt;/plist&gt;</string>
-			<key>Indent</key>
-			<integer>1</integer>
-			<key>Group</key>
-			<string>Supporting Files</string>
-			<key>TargetIndices</key>
-			<array/>
-			<key>SubstituteMacros</key>
-			<true/>
-		</dict>
-		<key>Info-Beta.plist:CoreInfoPlist</key>
-		<string>&lt;key&gt;CFBundleIdentifier&lt;/key&gt;
-&lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PRODUCT_NAME:rfc1034identifier)Beta&lt;/string&gt;
-&lt;key&gt;CFBundleInfoDictionaryVersion&lt;/key&gt;
-&lt;string&gt;6.0&lt;/string&gt;
-&lt;key&gt;CFBundleSignature&lt;/key&gt;
-&lt;string&gt;????&lt;/string&gt;
-</string>
-		<key>Info-Beta.plist:Executable</key>
-		<string>&lt;key&gt;CFBundleExecutable&lt;/key&gt;
-&lt;string&gt;$(EXECUTABLE_NAME)&lt;/string&gt;
-</string>
-		<key>Info-Beta.plist:BundleName</key>
-		<string>&lt;key&gt;CFBundleName&lt;/key&gt;
-&lt;string&gt;$(PRODUCT_NAME)&lt;/string&gt;
-</string>
-		<key>Info-Beta.plist:DevelopmentRegion</key>
-		<string>&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;
-&lt;string&gt;en&lt;/string&gt;
-</string>
-		<key>Info-Beta.plist:Versioning</key>
-		<string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
-&lt;string&gt;1.0&lt;/string&gt;
-&lt;key&gt;CFBundleVersion&lt;/key&gt;
-&lt;string&gt;1&lt;/string&gt;
-</string>
-		<key>Info-Development.plist</key>
-		<dict>
-			<key>Beginning</key>
-			<string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE plist PUBLIC &quot;-//Apple//DTD PLIST 1.0//EN&quot; &quot;http://www.apple.com/DTDs/PropertyList-1.0.dtd&quot;&gt;
-&lt;plist version=&quot;1.0&quot;&gt;
-&lt;dict&gt;
-</string>
-			<key>End</key>
-			<string>&lt;/dict&gt;
-&lt;/plist&gt;</string>
-			<key>Indent</key>
-			<integer>1</integer>
-			<key>Group</key>
-			<string>Supporting Files</string>
-			<key>TargetIndices</key>
-			<array/>
-			<key>SubstituteMacros</key>
-			<true/>
-		</dict>
-		<key>Info-Development.plist:CoreInfoPlist</key>
-		<string>&lt;key&gt;CFBundleIdentifier&lt;/key&gt;
-&lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PRODUCT_NAME:rfc1034identifier)Development&lt;/string&gt;
-&lt;key&gt;CFBundleInfoDictionaryVersion&lt;/key&gt;
-&lt;string&gt;6.0&lt;/string&gt;
-&lt;key&gt;CFBundleSignature&lt;/key&gt;
-&lt;string&gt;????&lt;/string&gt;
-</string>
-		<key>Info-Development.plist:Executable</key>
-		<string>&lt;key&gt;CFBundleExecutable&lt;/key&gt;
-&lt;string&gt;$(EXECUTABLE_NAME)&lt;/string&gt;
-</string>
-		<key>Info-Development.plist:BundleName</key>
-		<string>&lt;key&gt;CFBundleName&lt;/key&gt;
-&lt;string&gt;$(PRODUCT_NAME)&lt;/string&gt;
-</string>
-		<key>Info-Development.plist:DevelopmentRegion</key>
-		<string>&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;
-&lt;string&gt;en&lt;/string&gt;
-</string>
-		<key>Info-Development.plist:Versioning</key>
+		<key>Info.plist:Versioning</key>
 		<string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
 &lt;string&gt;1.0&lt;/string&gt;
 &lt;key&gt;CFBundleVersion&lt;/key&gt;

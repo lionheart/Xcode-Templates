@@ -74,21 +74,11 @@ BUNDLE_VERSION=$(($BUNDLE_VERSION + 1))
 	</array>
 	<key>Nodes</key>
 	<array>
-		<string>Info-Release.plist:PackageType</string>
-		<string>Info-Beta.plist:PackageType</string>
-		<string>Info-Development.plist:PackageType</string>
+		<string>Info.plist:PackageType</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
-		<key>Info-Release.plist:PackageType</key>
-		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
-&lt;string&gt;APPL&lt;/string&gt;
-</string>
-		<key>Info-Beta.plist:PackageType</key>
-		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
-&lt;string&gt;APPL&lt;/string&gt;
-</string>
-		<key>Info-Development.plist:PackageType</key>
+		<key>Info.plist:PackageType</key>
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
 &lt;string&gt;APPL&lt;/string&gt;
 </string>
