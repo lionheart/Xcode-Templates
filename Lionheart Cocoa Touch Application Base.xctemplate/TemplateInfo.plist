@@ -119,9 +119,13 @@
 		<string>Info-Beta.plist:iPhone</string>
 		<string>Info-Beta.plist:UIRequiredDeviceCapabilities:base</string>
 		<string>Info-Beta.plist:LaunchScreen</string>
-		<string>Info-Debug.plist:iPhone</string>
-		<string>Info-Debug.plist:UIRequiredDeviceCapabilities:base</string>
-		<string>Info-Debug.plist:LaunchScreen</string>
+		<string>Info-Beta.plist:UISupportedInterfaceOrientations~iPhone</string>
+		<string>Info-Beta.plist:UISupportedInterfaceOrientations~iPad</string>
+		<string>Info-Development.plist:iPhone</string>
+		<string>Info-Development.plist:UIRequiredDeviceCapabilities:base</string>
+		<string>Info-Development.plist:LaunchScreen</string>
+		<string>Info-Development.plist:UISupportedInterfaceOrientations~iPhone</string>
+		<string>Info-Development.plist:UISupportedInterfaceOrientations~iPad</string>
 		<string>Info-Release.plist:iPhone</string>
 		<string>Info-Release.plist:UIRequiredDeviceCapabilities:base</string>
 		<string>Info-Release.plist:LaunchScreen</string>
