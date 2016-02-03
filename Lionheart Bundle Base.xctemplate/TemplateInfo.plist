@@ -15,10 +15,10 @@
 		<dict>
 			<key>Configurations</key>
 			<dict>
-				<key>Debug</key>
+				<key>Development</key>
 				<dict>
 					<key>INFOPLIST_FILE</key>
-					<string>___PACKAGENAME___/Info-Debug.plist</string>
+					<string>___PACKAGENAME___/Info-Development.plist</string>
 				</dict>
 				<key>Beta</key>
 				<dict>
@@ -40,11 +40,11 @@
 		<string>Info-Beta.plist:BundleName</string>
 		<string>Info-Beta.plist:DevelopmentRegion</string>
 		<string>Info-Beta.plist:Versioning</string>
-		<string>Info-Debug.plist:CoreInfoPlist</string>
-		<string>Info-Debug.plist:Executable</string>
-		<string>Info-Debug.plist:BundleName</string>
-		<string>Info-Debug.plist:DevelopmentRegion</string>
-		<string>Info-Debug.plist:Versioning</string>
+		<string>Info-Development.plist:CoreInfoPlist</string>
+		<string>Info-Development.plist:Executable</string>
+		<string>Info-Development.plist:BundleName</string>
+		<string>Info-Development.plist:DevelopmentRegion</string>
+		<string>Info-Development.plist:Versioning</string>
 		<string>Info-Release.plist:CoreInfoPlist</string>
 		<string>Info-Release.plist:Executable</string>
 		<string>Info-Release.plist:BundleName</string>
@@ -145,7 +145,7 @@
 &lt;key&gt;CFBundleVersion&lt;/key&gt;
 &lt;string&gt;1&lt;/string&gt;
 </string>
-		<key>Info-Debug.plist</key>
+		<key>Info-Development.plist</key>
 		<dict>
 			<key>Beginning</key>
 			<string>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
@@ -165,27 +165,27 @@
 			<key>SubstituteMacros</key>
 			<true/>
 		</dict>
-		<key>Info-Debug.plist:CoreInfoPlist</key>
+		<key>Info-Development.plist:CoreInfoPlist</key>
 		<string>&lt;key&gt;CFBundleIdentifier&lt;/key&gt;
-&lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PRODUCT_NAME:rfc1034identifier)Debug&lt;/string&gt;
+&lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PRODUCT_NAME:rfc1034identifier)Development&lt;/string&gt;
 &lt;key&gt;CFBundleInfoDictionaryVersion&lt;/key&gt;
 &lt;string&gt;6.0&lt;/string&gt;
 &lt;key&gt;CFBundleSignature&lt;/key&gt;
 &lt;string&gt;????&lt;/string&gt;
 </string>
-		<key>Info-Debug.plist:Executable</key>
+		<key>Info-Development.plist:Executable</key>
 		<string>&lt;key&gt;CFBundleExecutable&lt;/key&gt;
 &lt;string&gt;$(EXECUTABLE_NAME)&lt;/string&gt;
 </string>
-		<key>Info-Debug.plist:BundleName</key>
+		<key>Info-Development.plist:BundleName</key>
 		<string>&lt;key&gt;CFBundleName&lt;/key&gt;
 &lt;string&gt;$(PRODUCT_NAME)&lt;/string&gt;
 </string>
-		<key>Info-Debug.plist:DevelopmentRegion</key>
+		<key>Info-Development.plist:DevelopmentRegion</key>
 		<string>&lt;key&gt;CFBundleDevelopmentRegion&lt;/key&gt;
 &lt;string&gt;en&lt;/string&gt;
 </string>
-		<key>Info-Debug.plist:Versioning</key>
+		<key>Info-Development.plist:Versioning</key>
 		<string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
 &lt;string&gt;1.0&lt;/string&gt;
 &lt;key&gt;CFBundleVersion&lt;/key&gt;

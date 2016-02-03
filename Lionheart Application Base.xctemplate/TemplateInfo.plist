@@ -76,7 +76,7 @@ BUNDLE_VERSION=$(($BUNDLE_VERSION + 1))
 	<array>
 		<string>Info-Release.plist:PackageType</string>
 		<string>Info-Beta.plist:PackageType</string>
-		<string>Info-Debug.plist:PackageType</string>
+		<string>Info-Development.plist:PackageType</string>
 	</array>
 	<key>Definitions</key>
 	<dict>
@@ -88,7 +88,7 @@ BUNDLE_VERSION=$(($BUNDLE_VERSION + 1))
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
 &lt;string&gt;APPL&lt;/string&gt;
 </string>
-		<key>Info-Debug.plist:PackageType</key>
+		<key>Info-Development.plist:PackageType</key>
 		<string>&lt;key&gt;CFBundlePackageType&lt;/key&gt;
 &lt;string&gt;APPL&lt;/string&gt;
 </string>

@@ -23,7 +23,7 @@
      &lt;string&gt;UIInterfaceOrientationLandscapeLeft&lt;/string&gt;
      &lt;string&gt;UIInterfaceOrientationLandscapeRight&lt;/string&gt;
 &lt;/array&gt;</string>
-		<key>Info-Debug.plist:UISupportedInterfaceOrientations~iPad</key>
+		<key>Info-Development.plist:UISupportedInterfaceOrientations~iPad</key>
 		<string>&lt;key&gt;UISupportedInterfaceOrientations~ipad&lt;/key&gt;
 &lt;array&gt;
 	&lt;string&gt;UIInterfaceOrientationPortrait&lt;/string&gt;
@@ -31,7 +31,7 @@
 	&lt;string&gt;UIInterfaceOrientationLandscapeLeft&lt;/string&gt;
 	&lt;string&gt;UIInterfaceOrientationLandscapeRight&lt;/string&gt;
 &lt;/array&gt;</string>
-		<key>Info-Debug.plist:UISupportedInterfaceOrientations~iPhone</key>
+		<key>Info-Development.plist:UISupportedInterfaceOrientations~iPhone</key>
 		<string>&lt;key&gt;UISupportedInterfaceOrientations&lt;/key&gt;
 &lt;array&gt;
      &lt;string&gt;UIInterfaceOrientationPortrait&lt;/string&gt;
@@ -116,7 +116,7 @@
 	<dict>
 		<key>Configurations</key>
 		<dict>
-			<key>Debug</key>
+			<key>Development</key>
 			<dict/>
 			<key>Beta</key>
 			<dict>

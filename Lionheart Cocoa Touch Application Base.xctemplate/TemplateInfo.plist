@@ -38,12 +38,12 @@
 			<key>Indent</key>
 			<integer>1</integer>
 		</dict>
-		<key>Info-Debug.plist:UIRequiredDeviceCapabilities:base</key>
+		<key>Info-Development.plist:UIRequiredDeviceCapabilities:base</key>
 		<string>&lt;string&gt;armv7&lt;/string&gt;</string>
-		<key>Info-Debug.plist:iPhone</key>
+		<key>Info-Development.plist:iPhone</key>
 		<string>&lt;key&gt;LSRequiresIPhoneOS&lt;/key&gt;
 &lt;true/&gt;</string>
-		<key>Info-Debug.plist:statusBarTintForNavBar</key>
+		<key>Info-Development.plist:statusBarTintForNavBar</key>
 		<string>&lt;key&gt;UIStatusBarTintParameters&lt;/key&gt;
 &lt;dict&gt;
     &lt;key&gt;UINavigationBar&lt;/key&gt;
@@ -354,7 +354,7 @@
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>iPhone Distribution</string>
 			</dict>
-			<key>Debug</key>
+			<key>Development</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>iPhone Developer</string>

@@ -134,7 +134,7 @@
 				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
 				<string>BETA=1 $(inherited)</string>
 			</dict>
-			<key>Debug</key>
+			<key>Development</key>
 			<dict>
 				<key>ONLY_ACTIVE_ARCH</key>
 				<string>YES</string>
@@ -163,7 +163,7 @@
 			</dict>
 			<key>Configurations</key>
 			<dict>
-				<key>Debug</key>
+				<key>Development</key>
 				<dict/>
 				<key>Release</key>
 				<dict/>
