@@ -187,12 +187,12 @@
 				<key>PRODUCT_BUNDLE_IDENTIFIER_SUFFIX</key>
 				<string>Beta</string>
 			</dict>
-			<key>Development</key>
+			<key>Debug</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>iPhone Developer</string>
 				<key>PRODUCT_BUNDLE_IDENTIFIER_SUFFIX</key>
-				<string>Development</string>
+				<string>Debug</string>
 			</dict>
 		</dict>
 	</dict>

@@ -130,7 +130,7 @@
 				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
 				<string>BETA=1 $(inherited)</string>
 			</dict>
-			<key>Development</key>
+			<key>Debug</key>
 			<dict>
 				<key>ONLY_ACTIVE_ARCH</key>
 				<string>YES</string>
@@ -156,8 +156,6 @@
 			<dict>
 				<key>PRODUCT_NAME</key>
 				<string>$(TARGET_NAME)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>___PACKAGENAME___/Info.plist</string>
 			</dict>
 		</dict>
 	</array>

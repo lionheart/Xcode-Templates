@@ -86,7 +86,7 @@
 	<dict>
 		<key>Configurations</key>
 		<dict>
-			<key>Development</key>
+			<key>Debug</key>
 			<dict/>
 			<key>Beta</key>
 			<dict>
