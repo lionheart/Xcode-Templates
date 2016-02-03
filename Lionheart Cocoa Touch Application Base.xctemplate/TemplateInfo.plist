@@ -44,8 +44,8 @@
     &lt;/dict&gt;
 &lt;/dict&gt;
 </string>
-		<key>Info.plist:</key>
-		<string></string>
+		<key>Info.plist:fullScreen</key>
+		<string>&lt;key&gt;UIRequiresFullScreen&lt;/key&gt; &lt;true/&gt;</string>
 	</dict>
 	<key>Identifier</key>
 	<string>com.lionheartsw.dt.unit.cocoaTouchApplicationBase</string>
@@ -58,6 +58,7 @@
 		<string>Info.plist:LaunchScreen</string>
 		<string>Info.plist:UISupportedInterfaceOrientations~iPhone</string>
 		<string>Info.plist:UISupportedInterfaceOrientations~iPad</string>
+		<string>Info.plist:fullScreen</string>
 		<string>Images.xcassets</string>
 	</array>
 	<key>Options</key>
