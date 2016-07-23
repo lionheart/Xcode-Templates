@@ -51,9 +51,7 @@
 			<true/>
 		</dict>
 		<key>Info.plist:CoreInfoPlist</key>
-		<string>&lt;key&gt;CFBundleIdentifier&lt;/key&gt;
-&lt;string&gt;___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PRODUCT_NAME:rfc1034identifier)$(PRODUCT_BUNDLE_IDENTIFIER_SUFFIX)&lt;/string&gt;
-&lt;key&gt;CFBundleInfoDictionaryVersion&lt;/key&gt;
+		<string>&lt;key&gt;CFBundleInfoDictionaryVersion&lt;/key&gt;
 &lt;string&gt;6.0&lt;/string&gt;
 &lt;key&gt;CFBundleSignature&lt;/key&gt;
 &lt;string&gt;????&lt;/string&gt;

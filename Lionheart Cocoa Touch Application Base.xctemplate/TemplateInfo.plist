@@ -29,6 +29,9 @@
 		</dict>
 		<key>Info.plist:UIRequiredDeviceCapabilities:base</key>
 		<string>&lt;string&gt;armv7&lt;/string&gt;</string>
+		<key>Info.plist:bundleIdentifier</key>
+		<string>&lt;key&gt;CFBundleIdentifier&lt;/key&gt;
+&lt;string&gt;$(PRODUCT_BUNDLE_IDENTIFIER)&lt;/string&gt;</string>
 		<key>Info.plist:iPhone</key>
 		<string>&lt;key&gt;LSRequiresIPhoneOS&lt;/key&gt;
 &lt;true/&gt;</string>
@@ -59,6 +62,7 @@
 		<string>Info.plist:UISupportedInterfaceOrientations~iPhone</string>
 		<string>Info.plist:UISupportedInterfaceOrientations~iPad</string>
 		<string>Info.plist:fullScreen</string>
+		<string>Info.plist:bundleIdentifier</string>
 		<string>Images.xcassets</string>
 	</array>
 	<key>Options</key>
@@ -178,22 +182,22 @@
 			<dict>
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>iPhone Distribution</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER_SUFFIX</key>
-				<string></string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PRODUCT_NAME:rfc1034identifier)</string>
 			</dict>
 			<key>Beta</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>iPhone Distribution</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER_SUFFIX</key>
-				<string>Beta</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PRODUCT_NAME:rfc1034identifier)-Beta</string>
 			</dict>
 			<key>Debug</key>
 			<dict>
 				<key>CODE_SIGN_IDENTITY</key>
 				<string>iPhone Developer</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER_SUFFIX</key>
-				<string>Debug</string>
+				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
+				<string>___VARIABLE_bundleIdentifierPrefix:bundleIdentifier___.$(PRODUCT_NAME:rfc1034identifier)-Debug</string>
 			</dict>
 		</dict>
 	</dict>
