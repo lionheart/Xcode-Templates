@@ -1,9 +1,4 @@
 //
-//  ___FILENAME___
-//  ___PROJECTNAME___
-//
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//
 //  ___COPYRIGHT___
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
